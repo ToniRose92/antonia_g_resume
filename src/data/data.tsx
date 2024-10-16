@@ -69,18 +69,18 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm Antonia Garay.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a USA based <strong className="text-stone-100">Data Analyst</strong>, currently working
+        towards my <strong className="text-stone-100">Georgia Tech Masters of Science in Analytics</strong> with a passion for uncovering stories hidden in data. 
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        Whether it's diving deep into numbers or getting lost in anime, I love discovering new insights and making the world a little better in the process. 
+      </p>
+      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+        Welcome to my digital space! 
       </p>
     </>
   ),
@@ -104,16 +104,16 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Hi! I’m Toni Garay, a Data Analyst with a passion for turning raw data into actionable insights. 
+  I specialize in solving complex problems through data-driven decisions, and I thrive in collaborative, cross-functional environments. 
+  Whether I'm wrangling millions of rows or creating compelling data visualizations, I love making data tell a story.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Missouri, United States', Icon: MapIcon},
+    /* {label: 'Age', text: '29', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon}, */
+    {label: 'Interests', text: 'Entertainment Media, Art/Drawing, Gaming, Coffee', Icon: SparklesIcon},
+    {label: 'Study', text: 'Georgia Institute of Technology', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'On the Hunt for Data-Driven Challenges', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -121,72 +121,76 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
+  export const skillsData = [
   {
-    name: 'Spoken languages',
+    name: 'Programming Languages',
     skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
+      { name: 'Python', level: 6 },
+      { name: 'SQL (PostgreSQL, MySQL)', level: 8 },
+      { name: 'R', level: 7 },
+      { name: 'Markdown (R-Markdown, YAML, Quarto)', level: 8 },
+      { name: 'JavaScript', level: 4 },
+      { name: 'TypeScript', level: 3 },
     ],
   },
   {
-    name: 'Frontend development',
+    name: 'Data Visualization',
     skills: [
-      {
-        name: 'React',
-        level: 9,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
-        level: 6,
-      },
+      { name: 'Matplotlib', level: 8 },
+      { name: 'Seaborn', level: 8 },
+      { name: 'ggplot (R)', level: 7 },
+      { name: 'DevExpress', level: 7 },
+      { name: 'Mode', level: 6 },
+      { name: 'Periscope', level: 6 },
+      { name: 'Power BI', level: 4 },
+      { name: 'Tableau', level: 4 },
+      { name: 'Excel & Power Query', level: 9 },
     ],
   },
   {
-    name: 'Backend development',
+    name: 'Machine Learning & Data Processing',
     skills: [
-      {
-        name: 'Node.js',
-        level: 8,
-      },
-      {
-        name: 'Rust',
-        level: 5,
-      },
-      {
-        name: 'Golang',
-        level: 4,
-      },
+      { name: 'Scikit-learn', level: 7 },
+      { name: 'TensorFlow', level: 6 },
+      { name: 'Pandas', level: 9 },
+      { name: 'R Libraries', level: 5 },  // Adjust based on your familiarity
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Databases & Automation',
     skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
-        level: 3,
-      },
+      { name: 'MySQL', level: 7 },
+      { name: 'PostgreSQL', level: 8 },
+      { name: 'Oracle', level: 6 },
+      { name: 'VBA (Excel)', level: 7 },
+      { name: 'Sharepoint', level: 6 },
+    ],
+  },
+  {
+    name: 'Cloud Platforms',
+    skills: [
+      { name: 'AWS', level: 5 },
+      { name: 'Google Cloud', level: 5 },
+    ],
+  },
+  {
+    name: 'Collaboration & Project Management',
+    skills: [
+      { name: 'JIRA', level: 7 },
+      { name: 'Confluence', level: 7 },
+      { name: 'Git', level: 4 },
+      { name: 'Sharepoint', level: 6 },
+      { name: 'ZenDesk', level: 8 },
+      { name: 'G Suite (Google Docs, Sheets, etc.)', level: 8 },
+    ],
+  },
+  {
+    name: 'Soft Skills',
+    skills: [
+      { name: 'Collaboration', level: 9 },
+      { name: 'Problem-Solving', level: 9 },
+      { name: 'Cross-functional Teamwork', level: 8 },
+      { name: 'Communication', level: 8 },
     ],
   },
 ];
@@ -196,12 +200,12 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Decoding the Influence of Movie Reviews',
+    description: 'Analyzed the impact of movie reviews on box office success using NLP and sentiment analysis. Explored the relationship between review sentiment and revenue for actors and directors, utilizing statistical models like GLM and Spearman’s Rank Correlation to draw insights into the influence of public perception on future projects.',
+    url: 'https://github.com/ToniRose92/Decoding-the-Influence-of-Movie-Reviews',
     image: porfolioImage1,
   },
-  {
+ /* {
     title: 'Project title 2',
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
@@ -212,96 +216,119 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://reactresume.com',
     image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage4,
-  },
-  {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage6,
-  },
-  {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage8,
-  },
-  {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage11,
-  },
-];
+  }, */
+]; 
 
 /**
  * Resume section -- TODO: Standardize resume contact format or offer MDX
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-  {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
-  },
-];
-
-export const experience: TimelineItem[] = [
-  {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'In Progress',
+    location: 'Georgia Institute of Technology',
+    title: 'M.S. in Analytics',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Currently pursuing a Master of Science in Analytics, focusing on data analysis, machine learning, and data visualization techniques. Developing advanced skills in Python, R, and SQL while applying analytical methodologies to solve complex problems in real-world scenarios.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'Completed: June 2023',
+    location: 'Western Governors University',
+    title: 'B.S. in Data Management and Analytics',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        Graduated with a strong foundation in data management, analysis, and database systems. Gained expertise in SQL, 
+        Python, and data visualization, alongside practical experience in using ETL processes, and performing statistical 
+        analysis on large datasets.
       </p>
+    ),
+  },
+  {
+    date: 'Completed: 2016',
+    location: 'Shasta Community College',
+    title: 'A.A. Degree in University Studies in Social Sciences',
+    content: (
+      <p>
+        Developed strong communication, critical thinking, and research skills, which provided a multidisciplinary 
+        perspective useful in data analytics and problem-solving.
+      </p>
+    ),
+  },
+];
+
+export const experience: TimelineItem[] = [
+   {
+    date: 'July 2023 - September 2024',
+    location: 'Momentus Technologies',
+    title: 'Insights Data Analyst (Analytics | Process Improvement | Knowledge Management)',
+    content: (
+      <>
+        <ul>
+          <li> Transformed large datasets into **actionable insights** using **SQL**, **Python**, and **DevExpress**, driving data-backed decisions for senior leadership and product teams.</li>
+          <li> Assisted in managing the **Insights knowledge base** by developing and maintaining documentation that improved team access to critical analytics processes and tools.</li>
+          <li> Proposed **process updates** to improve data workflows, resulting in streamlined reporting and faster access to critical insights for cross-functional teams.</li>
+          <li> Collaborated with clients and internal teams to deliver **customized analytics solutions**, optimizing business processes and enhancing decision-making capabilities.</li>
+          <li> Educated clients on SaaS reporting tools, increasing their ability to leverage data for more informed decisions.</li>
+        </ul>
+        <p>
+          In my role at Momentus Technologies, I focused on providing high-impact analytics while also driving process improvements and managing the knowledge base for Insights documentation. By streamlining workflows and ensuring data access, I enhanced the overall efficiency of reporting and decision-making across teams.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: 'August 2022 - July 2023',
+    location: 'Instacart',
+    title: 'Customer Experience Team Lead (Process Improvement | Analytics | Team Management)',
+    content: (
+      <>
+        <ul>
+          <li> Led key **process improvement initiatives** that reduced customer support contacts by **42k** and saved approximately **$300k** semi-annually.</li>
+          <li> Proposed and implemented strategic policy and procedural updates that enhanced customer experience and operational efficiency across multiple teams.</li>
+          <li> Developed and deployed **SQL-driven dashboards**, providing actionable insights that helped improve service delivery for high-value clients.</li>
+          <li> Collaborated with senior management to **optimize customer experience processes** through data-backed decisions, ensuring alignment with company goals.</li>
+          <li> Managed a team of 12, providing **data-driven feedback** and coaching based on KPI analysis, fostering continuous improvement and high performance.</li>
+        </ul>
+        <p>
+          As a Customer Experience Team Lead, I focused on process improvements and leveraging analytics to streamline operations. I played a pivotal role in optimizing service delivery, guiding team members with data insights, and implementing key process enhancements that drove efficiency and cost savings.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: 'March 2021 - August 2022',
+    location: 'Instacart',
+    title: 'Care RX Specialist Agent',
+    content: (
+      <>
+        <ul>
+          <li>Delivered exceptional support to high-priority clients by using data-driven strategies to solve complex customer issues.</li>
+          <li>Created custom reports and KPIs using **SQL**, enabling faster resolutions and improving team efficiency.</li>
+          <li>Provided real-time performance insights to senior leadership, optimizing response times and customer satisfaction.</li>
+        </ul>
+        <p>
+          In this specialized role, I used data analytics to enhance support for critical clients, ensuring smooth resolutions and top-tier service quality.
+        </p>
+      </>
+    ),
+  },
+  {
+    date: 'August 2020 - March 2021',
+    location: 'Instacart',
+    title: 'Specialized Customer Support Agent',
+    content: (
+      <>
+        <ul>
+          <li>Handled high-priority customer issues, using **SQL** and dashboards to track key performance metrics and improve response times.</li>
+          <li>Collaborated with teams to analyze data and enhance customer support strategies, driving better customer outcomes.</li>
+          <li>Resolved complex cases with data-backed insights, improving customer satisfaction for top-tier clients.</li>
+        </ul>
+        <p>
+          As a Specialized Customer Support Agent, I leveraged data to resolve complex customer issues, using my analytical skills to improve overall service.
+        </p>
+      </>
     ),
   },
 ];
@@ -313,18 +340,18 @@ export const testimonial: TestimonialSection = {
   imageSrc: testimonialImage,
   testimonials: [
     {
-      name: 'John Doe',
-      text: 'Use this as an opportunity to promote what it is like to work with you. High value testimonials include ones from current or past co-workers, managers, or from happy clients.',
+      name: 'Oliver Beier',
+      text: 'It\'s rare to come across someone as motivated and enthusiastic as Antonia Garay. <br>During the time I had the pleasure to work with her, Antonia demonstrated outstanding professionalism, strong work ethic, strong problem-solving abilities, and reliability: she always went above and beyond to ensure delivering high-quality work on time and with great attention to detail. <br>Furthermore, Antonia possesses exceptional teamwork skills, being always willing to support me and other colleagues. Her expertise and guidance were instrumental in my professional growth: she provided valuable insights, pushed me to expand my skills, and always made time to offer support and advice.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
-      name: 'Jane Doe',
-      text: 'Here you should write some nice things that someone has said about you. Encourage them to be specific and include important details (notes about a project you were on together, impressive quality produced, etc).',
+      name: 'Justin Monsewicz',
+      text: 'I worked with Antonia on various projects when we were both at Instacart. Coming from the agent/specialist side, Antonia provided great insights into the inner workings of their day-to-day experience (as well as their team\'s).<br>With their insights, I was then able to edit or even overhaul the content to make it easier to understand and access.<br>Antonia was always a pleasure to work with and was a great resource with a wealth of knowledge. Additionally, during my interactions with them, it was easy to see how analytical and insightful they were. They were always willing to learn and dig in, and they\'ve continued to do that with their career and education.<br>I would welcome any opportunity to work with Antonia again.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
-      name: 'Someone else',
-      text: 'Add several of these, and keep them as fresh as possible, but be sure to focus on quality testimonials with strong highlights of your skills/work ethic.',
+      name: 'Alexander Barkus',
+      text: 'I had the pleasure of working closely with Antonia during our time together at Instacart, and I can confidently say they are one of the most talented data professionals I have ever encountered. Their technical skills, combined with a natural ability to manage complex projects, make them a standout candidate for any data analytics or project management role.<br>In addition to their technical expertise, Antonia is also an excellent communicator and leader. They possess the unique skill of breaking down complex concepts into understandable terms, making it easy for both technical and non-technical stakeholders to grasp the full picture. This, coupled with their strong organizational skills, made them a key player in managing cross-functional teams and ensuring the timely delivery of projects.<br>What truly sets Antonia apart is their genuine passion for data and continuous learning. They are always eager to stay on the cutting edge of industry trends and tools, and this drive for knowledge allows them to adapt quickly in the ever-evolving data landscape.<br>I wholeheartedly recommend Antonia for any data analytics or project management role. Their combination of technical prowess, leadership ability, and passion for data makes them an invaluable asset to any organization.',
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -336,28 +363,28 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'Feel free to reach out if you’d like to connect! Whether you have a project in mind, a collaboration opportunity, or just want to chat about data science and analytics, I’d love to hear from you. I’m always open to discussing new opportunities and sharing insights. Let’s create something great together!',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'toni.garay4123@gmail.com',
+      href: 'mailto:toni.garay4123@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Springfield, MO, USA',
+      href: 'https://www.google.com/maps/place/Springfield,+MO/@37.1791045,-93.2963246,12z/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'ToniRose92',
+      href: 'https://github.com/ToniRose92',
     },
+   /* {
+      type: ContactType.Instagram,
+      text: '@tbakerx',
+      href: 'https://www.instagram.com/tbakerx/',
+    },  */
   ],
 };
 
@@ -365,9 +392,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ToniRose92'},
   {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  /*{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'}, */
 ];
