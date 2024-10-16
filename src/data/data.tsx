@@ -104,9 +104,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Hi! I’m Toni Garay, a Data Analyst with a passion for turning raw data into actionable insights. 
-  I specialize in solving complex problems through data-driven decisions, and I thrive in collaborative, cross-functional environments. 
-  Whether I'm wrangling millions of rows or creating compelling data visualizations, I love making data tell a story.`,
+  description: `Hi! I’m Toni Garay, a Data Analyst with a passion for turning raw data into actionable insights. I specialize in solving complex problems through data-driven decisions, and I thrive in collaborative, cross-functional environments. Whether I'm wrangling millions of rows or creating compelling data visualizations, I love making data tell a story.`,
   aboutItems: [
     {label: 'Location', text: 'Missouri, United States', Icon: MapIcon},
     /* {label: 'Age', text: '29', Icon: CalendarIcon},
@@ -121,7 +119,6 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  export const skillsData = [
   {
     name: 'Programming Languages',
     skills: [
