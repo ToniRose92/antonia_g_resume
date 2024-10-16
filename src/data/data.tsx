@@ -252,20 +252,20 @@ export const experience: TimelineItem[] = [
    {
     date: 'July 2023 - September 2024',
     location: 'Momentus Technologies',
-    title: 'Insights Data Analyst (Analytics | Process Improvement | Knowledge Management)',
+    title: 'Insights Data Analyst (Process Improvement | Knowledge Management)',
     content: (
       <>  
         <p>
-          * Transformed large datasets into <strong className="text-stone-100">actionable insights</strong> using <strong className="text-stone-100">SQL</strong>, <strong className="text-stone-100">Python</strong>, and <strong className="text-stone-100">DevExpress</strong>, driving data-backed decisions for senior leadership and product teams.
+          * Transformed large datasets into <strong>actionable insights</strong> using <strong>SQL</strong>, <strong>Python</strong>, and <strong>DevExpress</strong>, driving data-backed decisions for senior leadership and product teams.
         </p>
         <p>
-          * Assisted in managing the <strong className="text-stone-100">Insights knowledge base</strong> by developing and maintaining documentation that improved team access to critical analytics processes and tools.
+          * Assisted in managing the <strong>Insights knowledge base</strong> by developing and maintaining documentation that improved team access to critical analytics processes and tools.
         </p>
         <p>
-          * Proposed <strong className="text-stone-100">process</strong> updates to improve data workflows, resulting in streamlined reporting and faster access to critical insights for cross-functional teams.
+          * Proposed <strong>process</strong> updates to improve data workflows, resulting in streamlined reporting and faster access to critical insights for cross-functional teams.
         </p>
         <p>
-          * Collaborated with clients and internal teams to deliver <strong className="text-stone-100">customized analytics solutions</strong>, optimizing business processes and enhancing decision-making capabilities.
+          * Collaborated with clients and internal teams to deliver <strong>customized analytics solutions</strong>, optimizing business processes and enhancing decision-making capabilities.
         </p>
         <p>
           * Educated clients on SaaS reporting tools, increasing their ability to leverage data for more informed decisions.
@@ -279,20 +279,20 @@ export const experience: TimelineItem[] = [
   {
     date: 'August 2022 - July 2023',
     location: 'Instacart',
-    title: 'Customer Experience Team Lead (Process Improvement | Analytics | Team Management)',
+    title: 'Customer Experience Team Lead (Process Improvement | Analytics)',
     content: (
       <>
         <p>
-          Led key <strong className="text-stone-100">process improvement initiatives</strong> that reduced customer support contacts by <strong className="text-stone-100">42k</strong> and saved approximately <strong className="text-stone-100">$300k</strong> semi-annually.
+          Led key <strong>process improvement initiatives</strong> that reduced customer support contacts by <strong>42k</strong> and saved approximately <strong>$300k</strong> semi-annually.
         </p>
         <p> 
           Proposed and implemented strategic policy and procedural updates that enhanced customer experience and operational efficiency across multiple teams.
         </p>
         <p> 
-          Developed and deployed <strong className="text-stone-100">SQL-driven dashboards</strong>, providing actionable insights that helped improve service delivery for high-value clients.
+          Developed and deployed <strong>SQL-driven dashboards</strong>, providing actionable insights that helped improve service delivery for high-value clients.
         </p>
         <p> 
-          Collaborated with senior management to <strong className="text-stone-100">optimize customer experience processes</strong> through data-backed decisions, ensuring alignment with company goals.
+          Collaborated with senior management to <strong>optimize customer experience processes</strong> through data-backed decisions, ensuring alignment with company goals.
         </p>
         <p> 
           Managed a team of 12, providing **data-driven feedback** and coaching based on KPI analysis, fostering continuous improvement and high performance.
@@ -313,7 +313,7 @@ export const experience: TimelineItem[] = [
           Delivered exceptional support to high-priority clients by using data-driven strategies to solve complex customer issues.
         </p>
         <p>
-          Created custom reports and KPIs using <strong className="text-stone-100">SQL</strong>, enabling faster resolutions and improving team efficiency.
+          Created custom reports and KPIs using <strong>SQL</strong>, enabling faster resolutions and improving team efficiency.
         </p>
         <p>
           Provided real-time performance insights to senior leadership, optimizing response times and customer satisfaction.
@@ -331,7 +331,7 @@ export const experience: TimelineItem[] = [
     content: (
       <>
         <p>
-          Handled high-priority customer issues, using <strong className="text-stone-100">SQL</strong> and dashboards to track key performance metrics and improve response times.
+          Handled high-priority customer issues, using <strong>SQL</strong> and dashboards to track key performance metrics and improve response times.
         </p>
         <p>
           Collaborated with teams to analyze data and enhance customer support strategies, driving better customer outcomes.
