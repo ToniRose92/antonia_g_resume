@@ -380,12 +380,9 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Alexander Barkus',
-      text: (
-        'I had the pleasure of working closely with Antonia during our time together at Instacart, and I can confidently say they are one of the most talented data professionals I have ever encountered. Their technical skills, combined with a natural ability to manage complex projects, make them a standout candidate for any data analytics or project management role.'
-        'In addition to their technical expertise, Antonia is also an excellent communicator and leader. They possess the unique skill of breaking down complex concepts into understandable terms, making it easy for both technical and non-technical stakeholders to grasp the full picture. This, coupled with their strong organizational skills, made them a key player in managing cross-functional teams and ensuring the timely delivery of projects.'
-        'What truly sets Antonia apart is their genuine passion for data and continuous learning. They are always eager to stay on the cutting edge of industry trends and tools, and this drive for knowledge allows them to adapt quickly in the ever-evolving data landscape.'
-        'I wholeheartedly recommend Antonia for any data analytics or project management role. Their combination of technical prowess, leadership ability, and passion for data makes them an invaluable asset to any organization.'
-        ),
+      text: 
+        'I had the pleasure of working closely with Antonia during our time together at Instacart, and I can confidently say they are one of the most talented data professionals I have ever encountered. Their technical skills, combined with a natural ability to manage complex projects, make them a standout candidate for any data analytics or project management role. In addition to their technical expertise, Antonia is also an excellent communicator and leader. They possess the unique skill of breaking down complex concepts into understandable terms, making it easy for both technical and non-technical stakeholders to grasp the full picture. This, coupled with their strong organizational skills, made them a key player in managing cross-functional teams and ensuring the timely delivery of projects. What truly sets Antonia apart is their genuine passion for data and continuous learning. They are always eager to stay on the cutting edge of industry trends and tools, and this drive for knowledge allows them to adapt quickly in the ever-evolving data landscape. I wholeheartedly recommend Antonia for any data analytics or project management role. Their combination of technical prowess, leadership ability, and passion for data makes them an invaluable asset to any organization.'
+        ,
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
