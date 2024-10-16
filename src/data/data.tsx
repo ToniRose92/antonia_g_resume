@@ -123,9 +123,9 @@ export const skills: SkillGroup[] = [
     name: 'Programming Languages',
     skills: [
       {name: 'Python', level: 6},
-      {name: 'SQL (PostgreSQL, MySQL)', level: 8},
+      {name: 'SQL', level: 8},
       {name: 'R', level: 7},
-      {name: 'Markdown (R-Markdown, YAML, Quarto)', level: 8},
+      {name: 'Markdown', level: 8},
       {name: 'JavaScript', level: 4},
       {name: 'TypeScript', level: 3},
     ],
@@ -133,9 +133,7 @@ export const skills: SkillGroup[] = [
   {
     name: 'Data Visualization',
     skills: [
-      {name: 'Matplotlib', level: 8},
-      {name: 'Seaborn', level: 8},
-      {name: 'ggplot (R)', level: 7},
+      {name: 'Python & R Libraries', level: 8},
       {name: 'DevExpress', level: 7},
       {name: 'Mode', level: 6},
       {name: 'Periscope', level: 6},
@@ -154,18 +152,13 @@ export const skills: SkillGroup[] = [
     ],
   },
   {
-    name: 'Databases & Automation',
+    name: 'Databases & Automation & Cloud',
     skills: [
       {name: 'MySQL', level: 7},
       {name: 'PostgreSQL', level: 8},
       {name: 'Oracle', level: 6},
       {name: 'VBA (Excel)', level: 7},
       {name: 'Sharepoint', level: 6},
-    ],
-  },
-  {
-    name: 'Cloud Platforms',
-    skills: [
       {name: 'AWS', level: 5},
       {name: 'Google Cloud', level: 5},
     ],
