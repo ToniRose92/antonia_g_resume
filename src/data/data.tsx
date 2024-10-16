@@ -261,14 +261,22 @@ export const experience: TimelineItem[] = [
     location: 'Momentus Technologies',
     title: 'Insights Data Analyst (Analytics | Process Improvement | Knowledge Management)',
     content: (
-      <>
-        <ul>
-          <li> Transformed large datasets into **actionable insights** using **SQL**, **Python**, and **DevExpress**, driving data-backed decisions for senior leadership and product teams.</li>
-          <li> Assisted in managing the **Insights knowledge base** by developing and maintaining documentation that improved team access to critical analytics processes and tools.</li>
-          <li> Proposed **process updates** to improve data workflows, resulting in streamlined reporting and faster access to critical insights for cross-functional teams.</li>
-          <li> Collaborated with clients and internal teams to deliver **customized analytics solutions**, optimizing business processes and enhancing decision-making capabilities.</li>
-          <li> Educated clients on SaaS reporting tools, increasing their ability to leverage data for more informed decisions.</li>
-        </ul>
+      <>  
+        <p>
+          * Transformed large datasets into <strong className="text-stone-100">actionable insights</strong> using <strong className="text-stone-100">SQL</strong>, <strong className="text-stone-100">Python</strong>, and <strong className="text-stone-100">DevExpress</strong>, driving data-backed decisions for senior leadership and product teams.
+        </p>
+        <p>
+          * Assisted in managing the <strong className="text-stone-100">Insights knowledge base</strong> by developing and maintaining documentation that improved team access to critical analytics processes and tools.
+        </p>
+        <p>
+          * Proposed <strong className="text-stone-100">process</strong> updates to improve data workflows, resulting in streamlined reporting and faster access to critical insights for cross-functional teams.
+        </p>
+        <p>
+          * Collaborated with clients and internal teams to deliver <strong className="text-stone-100">customized analytics solutions</strong>, optimizing business processes and enhancing decision-making capabilities.
+        </p>
+        <p>
+          * Educated clients on SaaS reporting tools, increasing their ability to leverage data for more informed decisions.
+        </p>
         <p>
           In my role at Momentus Technologies, I focused on providing high-impact analytics while also driving process improvements and managing the knowledge base for Insights documentation. By streamlining workflows and ensuring data access, I enhanced the overall efficiency of reporting and decision-making across teams.
         </p>
@@ -281,13 +289,21 @@ export const experience: TimelineItem[] = [
     title: 'Customer Experience Team Lead (Process Improvement | Analytics | Team Management)',
     content: (
       <>
-        <ul>
-          <li> Led key **process improvement initiatives** that reduced customer support contacts by **42k** and saved approximately **$300k** semi-annually.</li>
-          <li> Proposed and implemented strategic policy and procedural updates that enhanced customer experience and operational efficiency across multiple teams.</li>
-          <li> Developed and deployed **SQL-driven dashboards**, providing actionable insights that helped improve service delivery for high-value clients.</li>
-          <li> Collaborated with senior management to **optimize customer experience processes** through data-backed decisions, ensuring alignment with company goals.</li>
-          <li> Managed a team of 12, providing **data-driven feedback** and coaching based on KPI analysis, fostering continuous improvement and high performance.</li>
-        </ul>
+        <p>
+          Led key <strong className="text-stone-100">process improvement initiatives</strong> that reduced customer support contacts by <strong className="text-stone-100">42k</strong> and saved approximately <strong className="text-stone-100">$300k</strong> semi-annually.
+        </p>
+        <p> 
+          Proposed and implemented strategic policy and procedural updates that enhanced customer experience and operational efficiency across multiple teams.
+        </p>
+        <p> 
+          Developed and deployed <strong className="text-stone-100">SQL-driven dashboards</strong>, providing actionable insights that helped improve service delivery for high-value clients.
+        </p>
+        <p> 
+          Collaborated with senior management to <strong className="text-stone-100">optimize customer experience processes</strong> through data-backed decisions, ensuring alignment with company goals.
+        </p>
+        <p> 
+          Managed a team of 12, providing **data-driven feedback** and coaching based on KPI analysis, fostering continuous improvement and high performance.
+        </p>
         <p>
           As a Customer Experience Team Lead, I focused on process improvements and leveraging analytics to streamline operations. I played a pivotal role in optimizing service delivery, guiding team members with data insights, and implementing key process enhancements that drove efficiency and cost savings.
         </p>
@@ -300,11 +316,15 @@ export const experience: TimelineItem[] = [
     title: 'Care RX Specialist Agent',
     content: (
       <>
-        <ul>
-          <li>Delivered exceptional support to high-priority clients by using data-driven strategies to solve complex customer issues.</li>
-          <li>Created custom reports and KPIs using **SQL**, enabling faster resolutions and improving team efficiency.</li>
-          <li>Provided real-time performance insights to senior leadership, optimizing response times and customer satisfaction.</li>
-        </ul>
+        <p>
+          Delivered exceptional support to high-priority clients by using data-driven strategies to solve complex customer issues.
+        </p>
+        <p>
+          Created custom reports and KPIs using <strong className="text-stone-100">SQL</strong>, enabling faster resolutions and improving team efficiency.
+        </p>
+        <p>
+          Provided real-time performance insights to senior leadership, optimizing response times and customer satisfaction.
+        </p>
         <p>
           In this specialized role, I used data analytics to enhance support for critical clients, ensuring smooth resolutions and top-tier service quality.
         </p>
@@ -317,11 +337,15 @@ export const experience: TimelineItem[] = [
     title: 'Specialized Customer Support Agent',
     content: (
       <>
-        <ul>
-          <li>Handled high-priority customer issues, using **SQL** and dashboards to track key performance metrics and improve response times.</li>
-          <li>Collaborated with teams to analyze data and enhance customer support strategies, driving better customer outcomes.</li>
-          <li>Resolved complex cases with data-backed insights, improving customer satisfaction for top-tier clients.</li>
-        </ul>
+        <p>
+          Handled high-priority customer issues, using <strong className="text-stone-100">SQL</strong> and dashboards to track key performance metrics and improve response times.
+        </p>
+        <p>
+          Collaborated with teams to analyze data and enhance customer support strategies, driving better customer outcomes.
+        </p>
+        <p>
+          Resolved complex cases with data-backed insights, improving customer satisfaction for top-tier clients.
+        </p>
         <p>
           As a Specialized Customer Support Agent, I leveraged data to resolve complex customer issues, using my analytical skills to improve overall service.
         </p>
@@ -338,17 +362,59 @@ export const testimonial: TestimonialSection = {
   testimonials: [
     {
       name: 'Oliver Beier',
-      text: 'It\'s rare to come across someone as motivated and enthusiastic as Antonia Garay. <br>During the time I had the pleasure to work with her, Antonia demonstrated outstanding professionalism, strong work ethic, strong problem-solving abilities, and reliability: she always went above and beyond to ensure delivering high-quality work on time and with great attention to detail. <br>Furthermore, Antonia possesses exceptional teamwork skills, being always willing to support me and other colleagues. Her expertise and guidance were instrumental in my professional growth: she provided valuable insights, pushed me to expand my skills, and always made time to offer support and advice.',
+      text: (
+        <>
+          <p>
+            It's rare to come across someone as motivated and enthusiastic as Antonia Garay. 
+          </p>
+          <p>
+            During the time I had the pleasure to work with her, Antonia demonstrated outstanding professionalism, strong work ethic, strong problem-solving abilities, and reliability: she always went above and beyond to ensure delivering high-quality work on time and with great attention to detail.
+          </p>
+          <p>
+            Furthermore, Antonia possesses exceptional teamwork skills, being always willing to support me and other colleagues. Her expertise and guidance were instrumental in my professional growth: she provided valuable insights, pushed me to expand my skills, and always made time to offer support and advice.
+          </p>
+        </>
+        ),
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/169.jpg',
     },
     {
       name: 'Justin Monsewicz',
-      text: 'I worked with Antonia on various projects when we were both at Instacart. Coming from the agent/specialist side, Antonia provided great insights into the inner workings of their day-to-day experience (as well as their team\'s).<br>With their insights, I was then able to edit or even overhaul the content to make it easier to understand and access.<br>Antonia was always a pleasure to work with and was a great resource with a wealth of knowledge. Additionally, during my interactions with them, it was easy to see how analytical and insightful they were. They were always willing to learn and dig in, and they\'ve continued to do that with their career and education.<br>I would welcome any opportunity to work with Antonia again.',
+      text: (
+        <>
+          <p>
+            I worked with Antonia on various projects when we were both at Instacart. Coming from the agent/specialist side, Antonia provided great insights into the inner workings of their day-to-day experience (as well as their team's).
+          </p>
+          <p>
+            With their insights, I was then able to edit or even overhaul the content to make it easier to understand and access.
+          </p>
+          <p>
+            Antonia was always a pleasure to work with and was a great resource with a wealth of knowledge. Additionally, during my interactions with them, it was easy to see how analytical and insightful they were. They were always willing to learn and dig in, and they've continued to do that with their career and education.
+          </p>
+          <p>
+            I would welcome any opportunity to work with Antonia again.
+          </p>
+        </>
+        ),
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
     {
       name: 'Alexander Barkus',
-      text: 'I had the pleasure of working closely with Antonia during our time together at Instacart, and I can confidently say they are one of the most talented data professionals I have ever encountered. Their technical skills, combined with a natural ability to manage complex projects, make them a standout candidate for any data analytics or project management role.<br>In addition to their technical expertise, Antonia is also an excellent communicator and leader. They possess the unique skill of breaking down complex concepts into understandable terms, making it easy for both technical and non-technical stakeholders to grasp the full picture. This, coupled with their strong organizational skills, made them a key player in managing cross-functional teams and ensuring the timely delivery of projects.<br>What truly sets Antonia apart is their genuine passion for data and continuous learning. They are always eager to stay on the cutting edge of industry trends and tools, and this drive for knowledge allows them to adapt quickly in the ever-evolving data landscape.<br>I wholeheartedly recommend Antonia for any data analytics or project management role. Their combination of technical prowess, leadership ability, and passion for data makes them an invaluable asset to any organization.',
+      text: (
+        <>
+          <p>
+            I had the pleasure of working closely with Antonia during our time together at Instacart, and I can confidently say they are one of the most talented data professionals I have ever encountered. Their technical skills, combined with a natural ability to manage complex projects, make them a standout candidate for any data analytics or project management role.
+          </p>
+          <p>
+            In addition to their technical expertise, Antonia is also an excellent communicator and leader. They possess the unique skill of breaking down complex concepts into understandable terms, making it easy for both technical and non-technical stakeholders to grasp the full picture. This, coupled with their strong organizational skills, made them a key player in managing cross-functional teams and ensuring the timely delivery of projects.
+          </p>
+          <p>
+            What truly sets Antonia apart is their genuine passion for data and continuous learning. They are always eager to stay on the cutting edge of industry trends and tools, and this drive for knowledge allows them to adapt quickly in the ever-evolving data landscape.
+          </p>
+          <p>
+            I wholeheartedly recommend Antonia for any data analytics or project management role. Their combination of technical prowess, leadership ability, and passion for data makes them an invaluable asset to any organization.
+          </p>
+        </>
+        ),
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/69.jpg',
     },
   ],
@@ -390,7 +456,7 @@ export const contact: ContactSection = {
  */
 export const socialLinks: Social[] = [
   {label: 'Github', Icon: GithubIcon, href: 'https://github.com/ToniRose92'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/tonirgaray/'},
   /*{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
   {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
   {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'}, */
