@@ -360,21 +360,7 @@ export const testimonial: TestimonialSection = {
     },
     {
       name: 'Justin Monsewicz',
-      content: (
-        <>
-          <p>
-            I worked with Antonia on various projects when we were both at Instacart. Coming from the agent/specialist side, Antonia provided great insights into the inner workings of their day-to-day experience (as well as their team's).
-          </p>
-          <p>
-            With their insights, I was then able to edit or even overhaul the content to make it easier to understand and access.
-          </p>
-          <p>
-            Antonia was always a pleasure to work with and was a great resource with a wealth of knowledge. Additionally, during my interactions with them, it was easy to see how analytical and insightful they were. They were always willing to learn and dig in, and they've continued to do that with their career and education.
-          </p>
-          <p>
-            I would welcome any opportunity to work with Antonia again.
-          </p>
-        </>
+      text: 'I worked with Antonia on various projects when we were both at Instacart. Coming from the agent/specialist side, Antonia provided great insights into the inner workings of their day-to-day experience (as well as their team\'s). With their insights, I was then able to edit or even overhaul the content to make it easier to understand and access. Antonia was always a pleasure to work with and was a great resource with a wealth of knowledge. Additionally, during my interactions with them, it was easy to see how analytical and insightful they were. They were always willing to learn and dig in, and they\'ve continued to do that with their career and education. I would welcome any opportunity to work with Antonia again.'
         ),
       image: 'https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/14.jpg',
     },
