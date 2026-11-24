@@ -3,6 +3,7 @@ import type {GetStaticProps, NextPage} from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import {memo, useMemo, useState} from 'react';
+import ClarityMotif from '../components/ClarityMotif';
 import {loadPortfolioContent, PortfolioContent} from '../lib/portfolio-content';
 
 type Props = {content: PortfolioContent};
@@ -23,7 +24,7 @@ const Preview: NextPage<Props> = memo(({content}) => {
           <h1>Make complexity <em>make sense.</em></h1>
           <p className="portfolio-preview__intro">{content.profile.summary}</p>
           <div className="portfolio-preview__actions"><a className="portfolio-preview__primary" href="#projects">Explore projects <span aria-hidden="true">↗</span></a><a href={content.profile.github_url} target="_blank" rel="noreferrer">GitHub ↗</a></div>
-          <div className="portfolio-preview__orb" aria-hidden="true"><span/><span/><span/></div>
+          <ClarityMotif className="portfolio-preview__hero-motif" variant="default"/>
         </section>
         <section className="portfolio-preview__work" id="projects">
           <div className="portfolio-preview__sectionhead"><div><p className="portfolio-preview__eyebrow">01 / SELECTED WORK</p><h2>Built around the problem.</h2></div><p>Explore the thinking behind the work.</p></div>
