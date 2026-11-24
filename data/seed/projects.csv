@@ -1,0 +1,5 @@
+project_id,title,slug,summary,project_type,status,featured_order,publication_status
+proj_housing,Shared Housing Allocation Engine,housing-allocation,An explainable approach to allocating shared household costs using income and household factors.,Personal data product,in_progress,1,draft
+proj_practicum,Georgia Tech Analytics Practicum,analytics-practicum,Applied analytics practicum; public case study pending disclosure review.,Academic analytics,completed,2,hold
+proj_movies,Decoding the Influence of Movie Reviews,movie-reviews,Analysis of movie reviews and box office performance using Python and statistical methods.,Independent analytics,completed,3,review
+proj_shelter,Shelter Feasibility and Impact Modeling,shelter-impact,Proposed research and simulation of shelter capacity costs and potential outcomes using aggregate and synthetic data.,Research concept,concept,4,draft
