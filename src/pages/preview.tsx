@@ -51,10 +51,19 @@ const Preview: NextPage<Props> = memo(({content}) => {
         <section className="portfolio-preview__career" id="experience">
           <div className="portfolio-preview__sectionhead"><div><p className="portfolio-preview__eyebrow">02 / EXPERIENCE</p><h2>Systems that make work easier.</h2></div><p>From stakeholder questions to durable analytics products.</p></div>
           <div className="portfolio-preview__features">{content.careerFeatures.map(feature=><article className="portfolio-preview__feature" key={feature.title}><p className="portfolio-preview__eyebrow">{feature.status}</p><h3>{feature.title}</h3><p>{feature.summary}</p><ul>{feature.details.map(d=><li key={d}>{d}</li>)}</ul></article>)}</div>
-          <div className="portfolio-preview__timeline">{Array.from(new Set(content.experience.map(p=>p.organization_id))).map(orgId=>{
-            const positions=content.experience.filter(p=>p.organization_id===orgId);
-            return <article className="portfolio-preview__employer" key={orgId}><h3>{positions[0].organization}</h3>{positions.map(position=><div className="portfolio-preview__role" key={position.position_id}><div><strong>{position.title}</strong><span>{new Date(position.start_date+'T12:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})} — {position.is_current==='true'?'Present':new Date(position.end_date+'T12:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})}</span></div>{position.highlights.length>0&&<details><summary>Selected work</summary><ul>{position.highlights.map(h=><li key={h}>{h}</li>)}</ul></details>}</div>)}</article>
-          })}</div>
+          <div className="portfolio-preview__timeline" aria-label="Career timeline">
+            {content.experience.map((position,index)=>(
+              <article className={`portfolio-preview__milestone ${index%2===0?'portfolio-preview__milestone--left':'portfolio-preview__milestone--right'} ${position.is_current==='true'?'portfolio-preview__milestone--current':''}`} key={position.position_id}>
+                <span className="portfolio-preview__milestone-dot" aria-hidden="true"/>
+                <div className="portfolio-preview__milestone-card">
+                  <p className="portfolio-preview__milestone-date">{new Date(position.start_date+'T12:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})} — {position.is_current==='true'?'Present':new Date(position.end_date+'T12:00:00').toLocaleDateString('en-US',{month:'short',year:'numeric'})}</p>
+                  <p className="portfolio-preview__milestone-org">{position.organization}</p>
+                  <h3>{position.title}</h3>
+                  {position.highlights.length>0&&<details><summary>Selected work</summary><ul>{position.highlights.map(h=><li key={h}>{h}</li>)}</ul></details>}
+                </div>
+              </article>
+            ))}
+          </div>
         </section>
         <section className="portfolio-preview__education" id="education"><p className="portfolio-preview__eyebrow">03 / EDUCATION</p><h2>Built on analytical foundations.</h2><div className="portfolio-preview__educationgrid">{content.education.map(e=><article key={e.education_id}><p>{e.organization}</p><h3>{e.degree} in {e.field_of_study}</h3><span>{e.graduation_term} {e.graduation_year}</span></article>)}</div></section>
         <section className="portfolio-preview__skills" id="skills"><p className="portfolio-preview__eyebrow">04 / SKILLS</p><h2>Tools and ways of working.</h2><div className="portfolio-preview__skillgrid">{[{name:'Programming & data',ids:['sql','python','r','snowflake','pandas']},{name:'Analytics & visualization',ids:['tableau','powerbi','excel','forecast']},{name:'Development & delivery',ids:['git','requirements','datamodel']},{name:'Additional tools',ids:['alteryx','devexpress']}].map(group=><div key={group.name}><h3>{group.name}</h3><div>{content.skills.filter(skill=>group.ids.includes(skill.skill_id)).map(skill=><span key={skill.skill_id}>{skill.name}</span>)}</div></div>)}</div></section>
