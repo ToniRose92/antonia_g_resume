@@ -20,9 +20,17 @@ export interface ProfileRecord {
   linkedin_url: string;
   visibility: string;
 }
+export interface ExperienceRecord {position_id:string; organization_id:string; organization:string; title:string; start_date:string; end_date:string; is_current:string; display_order:string; visibility:string; highlights:string[]}
+export interface EducationRecord {education_id:string; organization_id:string; organization:string; degree:string; field_of_study:string; graduation_year:string; graduation_term:string; display_order:string}
+export interface SkillRecord {skill_id:string; name:string; category:string; display_order:string; featured:string}
+export interface CareerFeature {title:string; status:string; summary:string; details:string[]}
 export interface PortfolioContent {
   profile: ProfileRecord;
   projects: ProjectRecord[];
+  experience: ExperienceRecord[];
+  education: EducationRecord[];
+  skills: SkillRecord[];
+  careerFeatures: CareerFeature[];
 }
 
 /** RFC 4180-style CSV reader supporting quoted commas, escaped quotes and line breaks. */
@@ -74,5 +82,21 @@ export function loadPortfolioContent(includeDrafts = false): PortfolioContent {
   const projects = allProjects
     .filter(p => p.publication_status === 'public' || (includeDrafts && p.publication_status === 'draft'))
     .sort((a, b) => Number(a.featured_order || 999) - Number(b.featured_order || 999));
-  return {profile, projects};
+  const orgs = readTable<{organization_id:string;name:string}>('organizations',['organization_id','name']);
+  const orgNames = new Map(orgs.map(o => [o.organization_id,o.name]));
+  const highlights = readTable<{position_id:string;statement:string;review_status:string}>('position_highlights',['position_id','statement','review_status']);
+  const experience = readTable<Omit<ExperienceRecord,'organization'|'highlights'>>('positions',['position_id','organization_id','title','start_date'])
+    .filter(p => p.visibility === 'public')
+    .sort((a,b)=>Number(a.display_order)-Number(b.display_order))
+    .map(p=>({...p,organization:orgNames.get(p.organization_id)||p.organization_id,highlights:highlights.filter(h=>h.position_id===p.position_id && h.review_status==='source_verified').map(h=>h.statement)}));
+  const education = readTable<Omit<EducationRecord,'organization'>>('education',['education_id','organization_id','degree','field_of_study'])
+    .sort((a,b)=>Number(a.display_order)-Number(b.display_order))
+    .map(e=>({...e,organization:orgNames.get(e.organization_id)||e.organization_id}));
+  const skills = readTable<SkillRecord>('skills',['skill_id','name','category'])
+    .sort((a,b)=>Number(a.display_order)-Number(b.display_order));
+  const careerFeatures: CareerFeature[] = [
+    {title:'Cost of a Payment',status:'Production · sole technical developer',summary:'Rebuilt financial data collection, validation, and analysis as an integrated analytics product.',details:['Estimated active effort reduced from 26–30 to approximately 7 labor hours per cycle (73–77%), excluding response wait time.','Structured forms reference prior-year inputs, flag material deviations for review and sign-off, and protect calculation logic in code.','Production capabilities include selected monthly refreshes, forecasting, and scenario testing.']},
+    {title:'Procurement Analytics Hub',status:'Working solution · active refinement · sole technical developer',summary:'Unified previously fragmented procurement spend information in a single analytics environment.',details:['Supports identification of overlapping activity and comparison of previously disconnected reporting perspectives.','Underlying data is accurate; classification, cadence, filtering, adjustment rules, and presentation continue to be refined.']}
+  ];
+  return {profile, projects, experience, education, skills, careerFeatures};
 }
