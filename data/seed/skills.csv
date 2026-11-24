@@ -1,0 +1,15 @@
+skill_id,name,category,display_order,featured
+sql,SQL,Data engineering,1,true
+python,Python,Programming,2,true
+r,R,Programming,3,true
+snowflake,Snowflake,Data platforms,4,true
+tableau,Tableau,Visualization,5,true
+excel,Excel and Power Query,Analytics,6,true
+alteryx,Alteryx,Data preparation,7,false
+powerbi,Power BI,Visualization,8,false
+devexpress,DevExpress,Reporting,9,false
+pandas,Pandas,Python ecosystem,10,false
+git,Git and GitHub,Development,11,false
+requirements,Requirements discovery,Product and delivery,12,true
+datamodel,Data modeling,Product and delivery,13,true
+forecast,Forecasting,Analytics,14,false
