@@ -57,3 +57,19 @@
 .clarity-motif--inverted .clarity-motif__center{fill:var(--brand-sage)}
 .portfolio-preview__hero-motif{position:absolute;z-index:0;width:min(47vw,610px);height:auto;right:-5%;top:50%;transform:translateY(-50%);pointer-events:none;opacity:.9}
 @media(max-width:700px){.portfolio-preview__hero-motif{width:340px;max-width:none;right:-175px;top:41%;opacity:.33}}
+
+/* Career, education, and skills — mobile-first preview sections. */
+.portfolio-preview__career,.portfolio-preview__education,.portfolio-preview__skills{padding:95px max(6vw,20px)}
+.portfolio-preview__career{background:var(--bg)}.portfolio-preview__education{background:#211e28}.portfolio-preview__skills{background:var(--bg)}
+.portfolio-preview__career h2,.portfolio-preview__education h2,.portfolio-preview__skills h2{font-size:clamp(32px,5vw,60px);line-height:1.1;margin:18px 0 32px}
+.portfolio-preview__features{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:36px 0 55px}
+.portfolio-preview__feature{border:1px solid #ffffff24;border-radius:12px;background:var(--panel);padding:28px}
+.portfolio-preview__feature h3{font-size:clamp(23px,3vw,34px);margin:14px 0}.portfolio-preview__feature>p:not(.portfolio-preview__eyebrow){color:var(--muted);line-height:1.6}
+.portfolio-preview__feature ul,.portfolio-preview__role ul{padding-left:20px;color:var(--muted);line-height:1.7}
+.portfolio-preview__feature li+li,.portfolio-preview__role li+li{margin-top:9px}
+.portfolio-preview__timeline{border-top:1px solid #ffffff25}.portfolio-preview__employer{display:grid;grid-template-columns:minmax(150px,1fr) 2fr;gap:24px;padding:25px 0;border-bottom:1px solid #ffffff25}
+.portfolio-preview__employer h3{font-size:24px;margin:0}.portfolio-preview__role{grid-column:2}.portfolio-preview__role>div{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}.portfolio-preview__role strong{font-size:15px}.portfolio-preview__role span{font-size:13px;color:var(--sage)}
+.portfolio-preview__role details{margin:12px 0 6px}.portfolio-preview__role summary{cursor:pointer;color:var(--orange);font-size:13px}
+.portfolio-preview__educationgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.portfolio-preview__educationgrid article{padding:25px;background:var(--panel);border:1px solid #ffffff20;border-radius:10px}.portfolio-preview__educationgrid p{font-size:13px;color:var(--sage)}.portfolio-preview__educationgrid h3{font-size:22px}.portfolio-preview__educationgrid span{color:var(--muted);font-size:13px}
+.portfolio-preview__skillgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.portfolio-preview__skillgrid>div{border-top:1px solid #ffffff30;padding-top:16px}.portfolio-preview__skillgrid h3{font-size:22px}.portfolio-preview__skillgrid>div>div{display:flex;flex-wrap:wrap;gap:9px}.portfolio-preview__skillgrid span{border:1px solid #86c8b86b;border-radius:999px;padding:9px 13px;font-size:13px}
+@media(max-width:700px){.portfolio-preview__nav{align-items:flex-start;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}.portfolio-preview__nav nav{flex-wrap:wrap}.portfolio-preview__career,.portfolio-preview__education,.portfolio-preview__skills{padding-top:65px;padding-bottom:65px}.portfolio-preview__features,.portfolio-preview__educationgrid,.portfolio-preview__skillgrid{grid-template-columns:1fr}.portfolio-preview__feature{padding:21px}.portfolio-preview__employer{display:block}.portfolio-preview__employer h3{margin-bottom:18px}.portfolio-preview__role{margin-bottom:16px}}
