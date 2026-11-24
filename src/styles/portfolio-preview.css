@@ -73,3 +73,31 @@
 .portfolio-preview__educationgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.portfolio-preview__educationgrid article{padding:25px;background:var(--panel);border:1px solid #ffffff20;border-radius:10px}.portfolio-preview__educationgrid p{font-size:13px;color:var(--sage)}.portfolio-preview__educationgrid h3{font-size:22px}.portfolio-preview__educationgrid span{color:var(--muted);font-size:13px}
 .portfolio-preview__skillgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.portfolio-preview__skillgrid>div{border-top:1px solid #ffffff30;padding-top:16px}.portfolio-preview__skillgrid h3{font-size:22px}.portfolio-preview__skillgrid>div>div{display:flex;flex-wrap:wrap;gap:9px}.portfolio-preview__skillgrid span{border:1px solid #86c8b86b;border-radius:999px;padding:9px 13px;font-size:13px}
 @media(max-width:700px){.portfolio-preview__nav{align-items:flex-start;padding-top:18px;padding-bottom:18px;flex-wrap:wrap}.portfolio-preview__nav nav{flex-wrap:wrap}.portfolio-preview__career,.portfolio-preview__education,.portfolio-preview__skills{padding-top:65px;padding-bottom:65px}.portfolio-preview__features,.portfolio-preview__educationgrid,.portfolio-preview__skillgrid{grid-template-columns:1fr}.portfolio-preview__feature{padding:21px}.portfolio-preview__employer{display:block}.portfolio-preview__employer h3{margin-bottom:18px}.portfolio-preview__role{margin-bottom:16px}}
+
+/* Alternating career milestone timeline: centered desktop, left-rail mobile. */
+.portfolio-preview__timeline{position:relative;border-top:0;padding:12px 0 4px;max-width:1120px;margin:0 auto}
+.portfolio-preview__timeline::before{content:"";position:absolute;top:16px;bottom:22px;left:50%;width:2px;transform:translateX(-50%);background:linear-gradient(to bottom,var(--orange),var(--sage) 25%,#86c8b855)}
+.portfolio-preview__milestone{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 64px minmax(0,1fr);min-height:150px;padding-bottom:24px}
+.portfolio-preview__milestone-dot{position:absolute;z-index:2;left:50%;top:24px;transform:translateX(-50%);height:16px;width:16px;border:3px solid var(--sage);background:var(--bg);border-radius:50%;box-shadow:0 0 0 5px var(--bg)}
+.portfolio-preview__milestone--current .portfolio-preview__milestone-dot{width:22px;height:22px;top:21px;background:var(--orange);border-color:var(--orange);box-shadow:0 0 0 6px var(--bg),0 0 0 8px #e77b5555}
+.portfolio-preview__milestone-card{position:relative;min-width:0;background:var(--panel);border:1px solid #ffffff24;border-radius:12px;padding:24px 26px}
+.portfolio-preview__milestone--left .portfolio-preview__milestone-card{grid-column:1;grid-row:1}
+.portfolio-preview__milestone--right .portfolio-preview__milestone-card{grid-column:3;grid-row:1}
+.portfolio-preview__milestone--left .portfolio-preview__milestone-card::after,.portfolio-preview__milestone--right .portfolio-preview__milestone-card::after{content:"";position:absolute;top:31px;width:32px;height:1px;background:#86c8b880}
+.portfolio-preview__milestone--left .portfolio-preview__milestone-card::after{right:-33px}.portfolio-preview__milestone--right .portfolio-preview__milestone-card::after{left:-33px}
+.portfolio-preview__milestone-date{font-size:12px;color:var(--sage);margin:0 0 10px}
+.portfolio-preview__milestone-org{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:700}
+.portfolio-preview__milestone-card h3{font-size:clamp(19px,2.3vw,27px);line-height:1.2;margin:0}
+.portfolio-preview__milestone-card details{margin-top:15px;color:var(--muted);font-size:13px;line-height:1.6}
+.portfolio-preview__milestone-card summary{color:var(--orange);cursor:pointer;font-weight:600}
+.portfolio-preview__milestone-card ul{padding-left:18px}
+.portfolio-preview__milestone-card li+li{margin-top:8px}
+@media(max-width:700px){
+.portfolio-preview__timeline{padding-left:35px}
+.portfolio-preview__timeline::before{left:11px;transform:none}
+.portfolio-preview__milestone{display:block;min-height:0;padding-bottom:22px}
+.portfolio-preview__milestone-dot{left:-24px;top:21px;transform:translateX(-50%)}
+.portfolio-preview__milestone--current .portfolio-preview__milestone-dot{top:18px}
+.portfolio-preview__milestone-card{padding:19px 18px}
+.portfolio-preview__milestone--left .portfolio-preview__milestone-card::after,.portfolio-preview__milestone--right .portfolio-preview__milestone-card::after{left:-25px;right:auto;width:24px;top:28px}
+}
