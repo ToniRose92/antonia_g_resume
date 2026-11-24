@@ -36,3 +36,7 @@
 .portfolio-preview__scenarios span:nth-child(1){height:30%}.portfolio-preview__scenarios span:nth-child(2){height:52%}.portfolio-preview__scenarios span:nth-child(3){height:75%;background:var(--orange)}.portfolio-preview__scenarios span:nth-child(4){height:58%}.portfolio-preview__scenarios span:nth-child(5){height:90%}
 .portfolio-preview__pipeline{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:32px;color:var(--cream)}
 .portfolio-preview__pipeline span{border:1px solid #86c8b86e;border-radius:5px;padding:10px 12px;font-size:10px;letter-spacing:.08em}.portfolio-preview__pipeline b{color:var(--orange)}
+
+/* Reusable artwork placeholders, replaced by actual project screenshots later. */
+.portfolio-preview__graphic{height:auto;aspect-ratio:8/5;overflow:hidden;border-radius:8px;margin:22px 0;background:#191820}
+.portfolio-preview__placeholder{display:block;width:100%;height:100%;object-fit:cover}
