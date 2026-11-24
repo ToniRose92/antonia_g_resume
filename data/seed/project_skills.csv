@@ -1,0 +1,5 @@
+project_id,skill_id,relationship_status
+proj_movies,python,verified
+proj_movies,pandas,verified
+proj_practicum,forecast,review
+proj_housing,datamodel,planned
