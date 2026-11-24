@@ -1,84 +1,72 @@
-# React JS Resume Website Template
+# Toni — Analytics & Product Engineering Portfolio
 
-![ReactJS Resume Website Template](resume-screenshot.jpg?raw=true 'ReactJS Resume Website Template')
+A personal portfolio documenting analytics work, technical projects, and the thinking behind practical data products.
 
-<div align="center">
+**Status:** Active rebuild. The existing résumé site remains on the default `main` branch; the new experience is being developed on `feat/portfolio-rebuild`.
 
-<img alt="GitHub release (latest by date including pre-releases" src="https://img.shields.io/github/v/release/tbakerx/react-resume-template?include_prereleases">
+## What this portfolio is for
 
-<img alt="GitHub top language" src="https://img.shields.io/github/languages/top/tbakerx/react-resume-template?style=flat">
+The site connects professional experience, skills, education, and selected projects. Rather than listing tools without context, it aims to show the problems addressed, decisions made, implementation approaches, and evidence behind the work.
 
-<img alt="GitHub Repo forks" src="https://img.shields.io/github/forks/tbakerx/react-resume-template?style=flat&color=success">
+## Current implementation
 
-<img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/tbakerx/react-resume-template?style=flat&color=yellow">
+- **Next.js 14, React 18, TypeScript, Tailwind CSS, and Sass** — inherited application stack; modernization is planned.
+- **Dark + Warm visual identity** — midnight, aubergine, terracotta, sage, and ivory.
+- **Editorial portfolio preview** — a responsive homepage concept at `/preview` on deployments of the development branch.
+- **Project category filters and contextual project graphics** — currently schematic, not representations of measured results.
+- **CSV content staging** — structured records in [`data/seed/`](data/seed) for future migration to Supabase/Postgres.
 
-<img alt="GitHub package.json dependency version (prod)" src="https://img.shields.io/github/package-json/dependency-version/tbakerx/react-resume-template/react?style=flat">
+The preview is **not yet the production homepage**. It currently shows draft project content for design review; it is not an approved public project catalog. The older résumé experience is still available at `/`.
 
-<img alt="Github Repo Sponsors" src="https://img.shields.io/github/sponsors/tbakerx?style=flat&color=blueviolet">
+## Project structure
 
-## React based template for software developer-focused resume websites
+| Path | Purpose |
+| --- | --- |
+| `src/pages/index.tsx` | Existing résumé homepage (legacy implementation) |
+| `src/pages/preview.tsx` | New portfolio concept |
+| `src/lib/portfolio-content.ts` | CSV loader and initial validation |
+| `src/styles/brand-tokens.css` | Shared visual identity tokens |
+| `src/styles/portfolio-preview.css` | Preview styling |
+| `data/seed/*.csv` | Draft content tables |
+| `data/README.md` | Content editing and publication safeguards |
+| `docs/portfolio-plan.md` | Architecture and implementation roadmap |
 
-</div>
+## Local development
 
-### View a [live demo here.](https://reactresume.com)
+The repository currently uses Yarn Classic. Install dependencies and run:
 
-#### If this template has helped you and you'd like to support my work, feel free to [♥️ Sponsor](https://github.com/sponsors/tbakerx) the project
+```bash
+yarn install
+yarn dev
+```
 
-### 🎉 Version 2 is here! New features:
-1. Completely rebuilt with React and full typescript support
-2. Built on the [Next.js](https://nextjs.org/) framework for easy server side rendering/static generation, image optimization, api routes, and deployment
-3. Styled entirely with [TailwindCss](https://tailwindcss.com/)
-4. Re-organized data population file for customizing site.
-5. Significant improvement/modernization of all site sections
- 
-**Looking for the old version? You can find it [here.](https://github.com/tbakerx/react-resume-template/releases/tag/v1.0.0)**
+Visit `http://localhost:3000/preview` to inspect the new design. Run `yarn build` before merging. Runtime and dependency compatibility are under review; a successful production build is not guaranteed across every Node.js version.
 
-## Description
+For a deployment of the development branch, append `/preview` to that deployment's URL. Vercel's Node.js version is configured in project settings.
 
-This is a React based personal resume website template. Built with typescript on the Next.js framework, styled with Tailwind css, and populated with data from a single file, you can easily create, customize and host your own personal website in minutes. Even better, the site is fully mobile-optimized and server-side rendered to ensure fast loading and a clean UI on any device. Read on to learn how to make it your own.
+## Content and publication
 
-## Make it Your Own!
+The CSV records are a temporary editorial source, **not a finished Supabase schema**. Some records are provisional or require verification. Do not publish draft, hold, archived, or review-only entries by default.
 
-### 1. Make sure you have what you need
+No confidential employer data, private contact information, credentials, or unapproved project artifacts should be committed. Public-facing claims and metrics must be verified before release.
 
-To build this website, you will need to have the latest stable versions of Node and Yarn downloaded and installed on your machine. If you don't already have them, you can get Node [here,](https://nodejs.org/en/download/) and Yarn [here.](https://yarnpkg.com/getting-started/install)
+## Roadmap
 
-### 2. Fork and download this repo (and star if you like!)
+1. Connect experience, education, and skills to the new UI.
+2. Finish responsive homepage and project explorer.
+3. Build individual case studies and a browser-readable résumé.
+4. Validate content, relationships, and publication rules.
+5. Migrate content to Supabase/Postgres with a controlled schema.
+6. Add PDF résumé export, accessibility testing, SEO, and deployment checks.
 
-Next, find the `Fork` button in the top right of this page. This will allow you to make your own copy, for more info on forking repo's see [here.](https://docs.github.com/en/get-started/quickstart/fork-a-repo#forking-a-repository) After this, download to your development machine using the green `Code` button at the top of the repo page.
+See [the implementation plan](docs/portfolio-plan.md) for details.
 
-### 3. Install dependencies and run
+## Original template attribution and license
 
-Once you have your own copy of this repo forked and downloaded, open the folder in your favorite terminal and run `yarn install` to install dependencies. Following this, run `yarn dev` to run the project. In your terminal you should be given the url of the running instance (usually http://localhost:3000 unless you have something else running).
+This repository began as a fork of **[Tim Baker's React Resume Template](https://github.com/tbakerx/react-resume-template)**. The original project supplied the initial Next.js résumé site, components, styling, and structure. This portfolio is being substantially redesigned and extended, but parts of that original implementation remain.
 
-### 4. Customize the data to make it your own
+The original template is licensed under the **MIT License**, copyright © 2021 Tim Baker. Its copyright and permission notice are preserved in [LICENSE](LICENSE). This attribution is not a claim that Tim Baker maintains or endorses this portfolio.
 
-All of the data for the site is driven via a file at `/src/data/data.tsx`. This is where you'll find the existing content, and updating the values here will be reflected on the site. If you have the site running as described above, you should see these changes reflected on save. The data types for all of these items are given in the same folder in the `dataDef.ts` file. Example images can be found at `src/images/` and are imported in the data file. To change, simply update these images using the same name and location, or add new images and update the imports. 
+## Repository
 
-### 5. Hook up contact form
-Due to the variety of options available for contact form providers, I've hooked up the contact form only so far as handling inputs and state. Form submission and the actual sending of the email is open to your own implementation. My personal recommendation for email provider is [Sendgrid.](https://sendgrid.com/)
-
-### 6. Make any other changes you like
-
-Of course, all of the code is there and nothing is hidden from you so if you would like to make any other styling/data changes, feel free!
-
-### 7. Deploy to Vercel and enjoy your new Resume Website
-
-Deploying your new site to Vercel is simple, and can be done by following their guide [here.](https://vercel.com/guides/deploying-nextjs-with-vercel) When you're all done and the build succeeds, you should be given a url for your live site, go there and you'll see your new personal resume website! Congratulations!
-
-## Project Created & Maintained By
-
-### Tim Baker
-
-<a href="https://twitter.com/timbakerx"><img src="https://github.com/aritraroy/social-icons/blob/master/twitter-icon.png?raw=true" width="60"></a><a href="https://instagram.com/tbakerx"><img src="https://github.com/aritraroy/social-icons/blob/master/instagram-icon.png?raw=true" width="60"></a>
-
-[![GitHub followers](https://img.shields.io/github/followers/tbakerx.svg?style=social&label=Follow)](https://github.com/tbakerx/)
-
-## Stargazers
-
-[![Stargazers repo roster for @tbakerx/react-resume-template](https://reporoster.com/stars/dark/tbakerx/react-resume-template)](https://github.com/tbakerx/react-resume-template/stargazers)
-
-## Forkers
-
-[![Forkers repo roster for @tbakerx/react-resume-template](https://reporoster.com/forks/dark/tbakerx/react-resume-template)](https://github.com/tbakerx/react-resume-template/network/members)
-
+Maintained as [ToniRose92/antonia_g_resume](https://github.com/ToniRose92/antonia_g_resume). The repository name may change after the rebuild.
