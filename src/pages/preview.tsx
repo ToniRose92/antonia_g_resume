@@ -33,7 +33,30 @@ const Preview: NextPage<Props> = memo(({content}) => {
           <div className="portfolio-preview__grid">
             {shown.map((project, index) => <article key={project.project_id} className="portfolio-preview__card">
               <div className="portfolio-preview__cardtop"><span>{String(index + 1).padStart(2, '0')} / {project.project_type}</span><span>{project.status.replace(/_/g, ' ')}</span></div>
-              <div className="portfolio-preview__graphic" aria-hidden="true"><span/><span/><span/></div>
+              <div aria-hidden="true" className="portfolio-preview__graphic">
+                {project.project_id === 'proj_housing' ? (
+                  <div className="portfolio-preview__visual portfolio-preview__visual--housing">
+                    <div className="portfolio-preview__visual-label">ALLOCATION MODEL <span>ILLUSTRATIVE</span></div>
+                    <div className="portfolio-preview__allocation"><span style={{width: '58%'}}/><span style={{width: '42%'}}/></div>
+                    <div className="portfolio-preview__visual-legend"><span>HOUSEHOLD A</span><span>HOUSEHOLD B</span></div>
+                  </div>
+                ) : project.project_id === 'proj_movies' ? (
+                  <div className="portfolio-preview__visual portfolio-preview__visual--movies">
+                    <div className="portfolio-preview__visual-label">SENTIMENT × REVENUE <span>SCHEMATIC</span></div>
+                    <div className="portfolio-preview__plot"><i/><i/><i/><i/><i/><i/><i/></div>
+                  </div>
+                ) : project.project_id === 'proj_shelter' ? (
+                  <div className="portfolio-preview__visual portfolio-preview__visual--shelter">
+                    <div className="portfolio-preview__visual-label">SCENARIO MODEL <span>CONCEPT</span></div>
+                    <div className="portfolio-preview__scenarios"><span/><span/><span/><span/><span/></div>
+                  </div>
+                ) : (
+                  <div className="portfolio-preview__visual portfolio-preview__visual--generic">
+                    <div className="portfolio-preview__visual-label">ANALYTICS WORKFLOW <span>OVERVIEW</span></div>
+                    <div className="portfolio-preview__pipeline"><span>INPUT</span><b>→</b><span>MODEL</span><b>→</b><span>INSIGHT</span></div>
+                  </div>
+                )}
+              </div>
               <h3>{project.title}</h3><p>{project.summary}</p>
               <span className="portfolio-preview__draft">Concept preview · full case study coming later</span>
             </article>)}
