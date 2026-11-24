@@ -1,0 +1,3 @@
+case_study_id,project_id,problem,approach,validation,outcomes,limitations,publication_status
+cs_housing,proj_housing,How should households allocate shared costs fairly?,Model income space usage and required burdens with transparent configurable weights.,,,Requires agreement on normative assumptions.,draft
+cs_shelter,proj_shelter,Can a proposed shelter model balance capacity cost and survivor safety?,Research published aggregate evidence and simulate capacity staffing and costs using synthetic scenarios.,,,No real client tracking data should be used.,draft
