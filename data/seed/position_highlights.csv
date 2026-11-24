@@ -1,0 +1,6 @@
+highlight_id,position_id,statement,metric_value,metric_unit,display_order,review_status
+h_m1,pos_m,Translated client reporting requirements into SQL and DevExpress reporting solutions.,,,1,source_verified
+h_m2,pos_m,Worked with datasets containing millions of rows to deliver analytics reports.,,,2,source_verified
+h_i1,pos_i,Implemented SQL-driven improvements associated with approximately 42000 fewer support contacts and $300000 in semiannual savings.,42000,contacts,1,verify_before_publish
+h_i2,pos_i,Built a dashboard that informed a customer experience overhaul for a major client.,,,2,source_verified
+h_i3,pos_i,Used quality assurance and KPI analysis to coach a team of 12 agents.,12,agents,3,source_verified
