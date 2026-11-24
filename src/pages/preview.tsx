@@ -1,10 +1,12 @@
+/* eslint-disable react/jsx-sort-props, simple-import-sort/imports -- Preview markup will be formatted during the UI refactor. */
 import type {GetStaticProps, NextPage} from 'next';
 import Head from 'next/head';
-import {useMemo, useState} from 'react';
+import Link from 'next/link';
+import {memo, useMemo, useState} from 'react';
 import {loadPortfolioContent, PortfolioContent} from '../lib/portfolio-content';
 
 type Props = {content: PortfolioContent};
-const Preview: NextPage<Props> = ({content}) => {
+const Preview: NextPage<Props> = memo(({content}) => {
   const [filter, setFilter] = useState('All');
   const types = useMemo(() => ['All', ...Array.from(new Set(content.projects.map(p => p.project_type)))], [content.projects]);
   const shown = content.projects.filter(p => filter === 'All' || p.project_type === filter);
@@ -14,7 +16,7 @@ const Preview: NextPage<Props> = ({content}) => {
       <main className="portfolio-preview">
         <header className="portfolio-preview__nav">
           <a href="#top" className="portfolio-preview__wordmark">TONI<span>.</span></a>
-          <nav aria-label="Portfolio preview navigation"><a href="#projects">Projects</a><a href="#about">About</a><a href="/#resume">Existing résumé</a></nav>
+          <nav aria-label="Portfolio preview navigation"><a href="#projects">Projects</a><a href="#about">About</a><Link href="/#resume">Existing résumé</Link></nav>
         </header>
         <section className="portfolio-preview__hero" id="top">
           <p className="portfolio-preview__eyebrow">ANALYTICS / ENGINEERING / PRODUCT THINKING</p>
@@ -43,6 +45,6 @@ const Preview: NextPage<Props> = ({content}) => {
       </main>
     </>
   );
-};
+});
 export const getStaticProps: GetStaticProps<Props> = async () => ({props: {content: loadPortfolioContent(true)}});
 export default Preview;
