@@ -1,0 +1,17 @@
+:root {
+  color-scheme: dark;
+  --brand-midnight: #191820;
+  --brand-aubergine: #392838;
+  --brand-terracotta: #E77B55;
+  --brand-sage: #86C8B8;
+  --brand-ivory: #F3E8DD;
+  --surface-base: #191820;
+  --surface-raised: #27222D;
+  --surface-accent: #392838;
+  --text-primary: #F3E8DD;
+  --text-muted: #C9BFC8;
+  --accent-primary: #E77B55;
+  --accent-secondary: #86C8B8;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+}
