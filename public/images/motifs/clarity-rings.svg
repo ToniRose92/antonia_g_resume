@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+  <!-- Brand palette only; transparent background; center remains fixed across variants. -->
+  <circle cx="267" cy="235" r="195" stroke="#86C8B8" stroke-width="2.5"/>
+  <circle cx="405" cy="250" r="169" stroke="#F3E8DD" stroke-width="2"/>
+  <circle cx="233" cy="355" r="190" stroke="#392838" stroke-width="3"/>
+  <circle cx="339" cy="377" r="183" stroke="#F3E8DD" stroke-width="3.5"/>
+  <circle cx="423" cy="165" r="148" stroke="#C9BFC8" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 12"/>
+  <circle cx="170" cy="443" r="116" stroke="#86C8B8" stroke-width="3" stroke-linecap="round" stroke-dasharray="1 12"/>
+  <circle cx="340" cy="330" r="67" fill="#E77B55"/>
+</svg>
