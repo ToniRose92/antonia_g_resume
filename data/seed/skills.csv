@@ -8,8 +8,16 @@ excel,Excel and Power Query,Analytics,6,true
 alteryx,Alteryx,Data preparation,7,false
 powerbi,Power BI,Visualization,8,false
 devexpress,DevExpress,Reporting,9,false
-pandas,Pandas,Python ecosystem,10,false
-git,Git and GitHub,Development,11,false
-requirements,Requirements discovery,Product and delivery,12,true
-datamodel,Data modeling,Product and delivery,13,true
-forecast,Forecasting,Analytics,14,false
+polars,Polars,Python ecosystem,10,true
+pandas,Pandas,Python ecosystem,11,false
+git,Git and GitHub,Development,12,false
+requirements,Requirements discovery,Product and delivery,13,true
+datamodel,Data modeling,Product and delivery,14,true
+forecast,Forecasting,Analytics,15,false
+positconnect,Posit Connect,Deployment,16,true
+duckdb,DuckDB,Data platforms,17,true
+javascript,JavaScript (foundational),Web development,18,false
+html,HTML (foundational),Web development,19,false
+css,CSS (foundational),Web development,20,false
+jupyter,JupyterLab,Development,21,false
+quarto,Quarto,Development,22,false
