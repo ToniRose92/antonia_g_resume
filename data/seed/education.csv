@@ -1,0 +1,4 @@
+education_id,organization_id,degree,field_of_study,graduation_year,graduation_term,display_order
+edu_gt,org_gt,Master of Science,Analytics,2026,Summer,1
+edu_wgu,org_wgu,Bachelor of Science,Data Management and Analytics,2023,June,2
+edu_shasta,org_shasta,Associate of Arts,University Studies in Social Sciences,2016,,3

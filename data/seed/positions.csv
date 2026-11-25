@@ -1,0 +1,7 @@
+position_id,organization_id,title,start_date,end_date,is_current,display_order,visibility
+pos_p3,org_progressive,Data Analyst III,2025-09-01,,true,1,public
+pos_p2,org_progressive,Data Analyst II,2024-12-01,2025-09-01,false,2,public
+pos_m,org_momentus,Insights Data Analyst,2023-07-01,2024-09-01,false,3,public
+pos_i,org_instacart,Customer Experience Team Lead,2021-08-01,2023-07-01,false,4,public
+pos_irx,org_instacart,Care RX Specialist Agent,2021-03-01,2021-08-01,false,5,archive
+pos_is,org_instacart,Specialized Customer Support Agent,2020-08-01,2021-03-01,false,6,archive

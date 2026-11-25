@@ -1,0 +1,6 @@
+position_id,skill_id,relationship_status
+pos_m,sql,verified
+pos_m,devexpress,verified
+pos_i,sql,verified
+pos_p3,snowflake,review
+pos_p3,tableau,review
