@@ -1,7 +1,6 @@
 /* eslint-disable react/jsx-sort-props, simple-import-sort/imports -- Preview markup will be formatted during the UI refactor. */
 import type {GetStaticProps, NextPage} from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 import {memo, useMemo, useState} from 'react';
 import ClarityMotif from '../components/ClarityMotif';
 import {loadPortfolioContent, PortfolioContent} from '../lib/portfolio-content';
@@ -17,7 +16,7 @@ const Preview: NextPage<Props> = memo(({content}) => {
       <main className="portfolio-preview">
         <header className="portfolio-preview__nav">
           <a href="#top" className="portfolio-preview__wordmark">TONI<span>.</span></a>
-          <nav aria-label="Portfolio navigation"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#about">About</a><Link href="/legacy#resume">Earlier résumé</Link></nav>
+          <nav aria-label="Portfolio navigation"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#about">About</a></nav>
         </header>
         <section className="portfolio-preview__hero" id="top">
           <p className="portfolio-preview__eyebrow">HI, I’M</p>
