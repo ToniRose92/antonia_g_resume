@@ -87,5 +87,5 @@ const Preview: NextPage<Props> = memo(({content}) => {
     </>
   );
 });
-export const getStaticProps: GetStaticProps<Props> = async () => ({props: {content: loadPortfolioContent(false)}});
+export const getStaticProps: GetStaticProps<Props> = async () => ({props: {content: loadPortfolioContent(true)}});
 export default Preview;
