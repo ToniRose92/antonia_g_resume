@@ -2,7 +2,7 @@
 
 A personal portfolio for **Antonia Rian Garay (Toni)**, a Data Analyst III exploring the space between analytics, engineering, and product thinking. The site brings together professional experience, technical projects, and the decisions behind useful data products.
 
-**Status:** Active rebuild. The existing résumé site remains on the default `main` branch; the new experience is being developed on `feat/portfolio-rebuild`.
+**Status:** Redesigned portfolio is the homepage at `/`. The earlier résumé is preserved at `/legacy`; `/preview` remains a draft-content review route.
 
 ## What this portfolio is for
 
@@ -16,14 +16,14 @@ The site connects professional experience, skills, education, and selected proje
 - **Project category filters and contextual project graphics** — currently schematic, not representations of measured results.
 - **CSV content staging** — structured records in [`data/seed/`](data/seed) for future migration to Supabase/Postgres.
 
-The preview is **not yet the production homepage**. It currently shows draft project content for design review; it is not an approved public project catalog. The older résumé experience is still available at `/`.
+The homepage at `/` displays only projects marked `public`. The `/preview` route includes draft project content for review and is excluded from indexing. The earlier résumé remains accessible at `/legacy`.
 
 ## Project structure
 
 | Path | Purpose |
 | --- | --- |
-| `src/pages/index.tsx` | Existing résumé homepage (legacy implementation) |
-| `src/pages/preview.tsx` | New portfolio concept |
+| `src/pages/index.tsx` | Redesigned public homepage |
+| `src/pages/preview.tsx` | Draft-content design preview |
 | `src/lib/portfolio-content.ts` | CSV loader and initial validation |
 | `src/styles/brand-tokens.css` | Shared visual identity tokens |
 | `src/styles/portfolio-preview.css` | Preview styling |
@@ -40,9 +40,9 @@ yarn install
 yarn dev
 ```
 
-Visit `http://localhost:3000/preview` to inspect the new design. Run `yarn build` before merging. Runtime and dependency compatibility are under review; a successful production build is not guaranteed across every Node.js version.
+Visit `http://localhost:3000/` for the public homepage, `/preview` to review drafts, or `/legacy` for the earlier résumé. Run `yarn build` before merging. Runtime and dependency compatibility are under review; a successful production build is not guaranteed across every Node.js version.
 
-For a deployment of the development branch, append `/preview` to that deployment's URL. Vercel's Node.js version is configured in project settings.
+Vercel's Node.js version is configured in project settings.
 
 ## Content and publication
 
@@ -52,7 +52,7 @@ No confidential employer data, private contact information, credentials, or unap
 
 ## Roadmap
 
-1. Review the redesigned homepage, mobile layout, experience timeline, and About section.
+1. Validate the released homepage, mobile layout, experience timeline, and About section.
 2. Validate all public project descriptions, metrics, publication status, and links.
 3. Build detailed case studies and a browser-readable résumé.
 4. Test accessibility, responsiveness, and production builds before replacing the existing homepage.
