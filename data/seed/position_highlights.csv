@@ -4,3 +4,8 @@ h_m2,pos_m,Worked with datasets containing millions of rows to deliver analytics
 h_i1,pos_i,Implemented SQL-driven improvements associated with approximately 42000 fewer support contacts and $300000 in semiannual savings.,42000,contacts,1,verify_before_publish
 h_i2,pos_i,Built a dashboard that informed a customer experience overhaul for a major client.,,,2,source_verified
 h_i3,pos_i,Used quality assurance and KPI analysis to coach a team of 12 agents.,12,agents,3,source_verified
+h_p3_1,pos_p3,Expanded analytics solutions initiated as a Data Analyst II including Cost of a Payment and the Procurement Analytics Hub.,,,1,source_verified
+h_p3_2,pos_p3,Mentor Data Analyst II colleagues and lead internal DocControl and ProjectControl initiatives.,,,2,source_verified
+h_p3_3,pos_p3,Continue developing the Claims Cash Processing Hub; a second phase is planned.,,,3,source_verified
+h_p2_1,pos_p2,Built initial versions of Cost of a Payment and the Procurement Analytics Hub.,,,1,source_verified
+h_p2_2,pos_p2,Developed the initial Claims Cash Processing Hub as a centralized resource for claims cash processing with forecasting capabilities.,,,2,source_verified
