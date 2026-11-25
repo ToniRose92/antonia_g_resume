@@ -1,6 +1,6 @@
-# Toni — Analytics & Product Engineering Portfolio
+# Antonia Rian Garay — Analytics & Product Engineering Portfolio
 
-A personal portfolio documenting analytics work, technical projects, and the thinking behind practical data products.
+A personal portfolio for **Antonia Rian Garay (Toni)**, a Data Analyst III exploring the space between analytics, engineering, and product thinking. The site brings together professional experience, technical projects, and the decisions behind useful data products.
 
 **Status:** Active rebuild. The existing résumé site remains on the default `main` branch; the new experience is being developed on `feat/portfolio-rebuild`.
 
@@ -12,7 +12,7 @@ The site connects professional experience, skills, education, and selected proje
 
 - **Next.js 14, React 18, TypeScript, Tailwind CSS, and Sass** — inherited application stack; modernization is planned.
 - **Dark + Warm visual identity** — midnight, aubergine, terracotta, sage, and ivory.
-- **Editorial portfolio preview** — a responsive homepage concept at `/preview` on deployments of the development branch.
+- **Editorial portfolio preview** — a responsive homepage concept at `/preview` on deployments of the development branch, with a full-name introduction, conversational About section, and career timeline.
 - **Project category filters and contextual project graphics** — currently schematic, not representations of measured results.
 - **CSV content staging** — structured records in [`data/seed/`](data/seed) for future migration to Supabase/Postgres.
 
@@ -52,12 +52,12 @@ No confidential employer data, private contact information, credentials, or unap
 
 ## Roadmap
 
-1. Connect experience, education, and skills to the new UI.
-2. Finish responsive homepage and project explorer.
-3. Build individual case studies and a browser-readable résumé.
-4. Validate content, relationships, and publication rules.
-5. Migrate content to Supabase/Postgres with a controlled schema.
-6. Add PDF résumé export, accessibility testing, SEO, and deployment checks.
+1. Review the redesigned homepage, mobile layout, experience timeline, and About section.
+2. Validate all public project descriptions, metrics, publication status, and links.
+3. Build detailed case studies and a browser-readable résumé.
+4. Test accessibility, responsiveness, and production builds before replacing the existing homepage.
+5. Evaluate a controlled Supabase/Postgres content migration.
+6. Add PDF résumé export, SEO, and deployment checks.
 
 See [the implementation plan](docs/portfolio-plan.md) for details.
 
