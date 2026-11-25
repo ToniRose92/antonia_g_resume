@@ -101,3 +101,13 @@
 .portfolio-preview__milestone-card{padding:19px 18px}
 .portfolio-preview__milestone--left .portfolio-preview__milestone-card::after,.portfolio-preview__milestone--right .portfolio-preview__milestone-card::after{left:-25px;right:auto;width:24px;top:28px}
 }
+
+/* Personal introduction and About narrative. */
+.portfolio-preview__hero-name{position:relative;z-index:1;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(23px,3.4vw,43px);letter-spacing:-.045em;line-height:1.12;margin:8px 0 7px}
+.portfolio-preview__hero-name span{color:var(--orange)}
+.portfolio-preview__hero-role{position:relative;z-index:1;color:var(--muted);font-size:clamp(12px,1.5vw,15px);margin:0 0 16px}
+.portfolio-preview__about-copy{max-width:760px;margin:0 0 30px}
+.portfolio-preview__about .portfolio-preview__about-copy p{color:var(--muted);line-height:1.8;font-size:clamp(15px,1.7vw,18px);margin:0 0 19px}
+.portfolio-preview__about .portfolio-preview__about-copy p:first-child{color:var(--cream);font-weight:600}
+.portfolio-preview__about-copy em{color:var(--cream);font-style:italic}
+@media(max-width:700px){.portfolio-preview__hero-name{max-width:320px}.portfolio-preview__hero-role{max-width:310px}}
