@@ -13,14 +13,16 @@ const Preview: NextPage<Props> = memo(({content}) => {
   const shown = content.projects.filter(p => filter === 'All' || p.project_type === filter);
   return (
     <>
-      <Head><title>Toni | Portfolio concept preview</title><meta name="description" content="Preview of a project-first analytics portfolio."/><meta name="robots" content="noindex,nofollow"/></Head>
+      <Head><title>Antonia Rian Garay | Portfolio preview</title><meta name="description" content="Preview of a project-first analytics portfolio."/><meta name="robots" content="noindex,nofollow"/></Head>
       <main className="portfolio-preview">
         <header className="portfolio-preview__nav">
           <a href="#top" className="portfolio-preview__wordmark">TONI<span>.</span></a>
           <nav aria-label="Portfolio preview navigation"><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#about">About</a><Link href="/#resume">Existing résumé</Link></nav>
         </header>
         <section className="portfolio-preview__hero" id="top">
-          <p className="portfolio-preview__eyebrow">ANALYTICS / ENGINEERING / PRODUCT THINKING</p>
+          <p className="portfolio-preview__eyebrow">HI, I’M</p>
+          <p className="portfolio-preview__hero-name">Antonia Rian Garay<span>.</span></p>
+          <p className="portfolio-preview__hero-role">Data Analyst III · Analytics Product Engineering</p>
           <h1>Make complexity <em>make sense.</em></h1>
           <p className="portfolio-preview__intro">{content.profile.summary}</p>
           <div className="portfolio-preview__actions"><a className="portfolio-preview__primary" href="#projects">Explore projects <span aria-hidden="true">↗</span></a><a href={content.profile.github_url} target="_blank" rel="noreferrer">GitHub ↗</a></div>
@@ -67,7 +69,19 @@ const Preview: NextPage<Props> = memo(({content}) => {
         </section>
         <section className="portfolio-preview__education" id="education"><p className="portfolio-preview__eyebrow">03 / EDUCATION</p><h2>Built on analytical foundations.</h2><div className="portfolio-preview__educationgrid">{content.education.map(e=><article key={e.education_id}><p>{e.organization}</p><h3>{e.degree} in {e.field_of_study}</h3><span>{e.graduation_term} {e.graduation_year}</span></article>)}</div></section>
         <section className="portfolio-preview__skills" id="skills"><p className="portfolio-preview__eyebrow">04 / SKILLS</p><h2>Tools and ways of working.</h2><div className="portfolio-preview__skillgrid">{[{name:'Programming & web foundations',ids:['python','sql','r','javascript','html','css']},{name:'Data processing & platforms',ids:['snowflake','duckdb','polars','pandas']},{name:'Analytics & visualization',ids:['tableau','powerbi','excel','alteryx','devexpress']},{name:'Deployment & development tools',ids:['positconnect','git','jupyter','quarto']},{name:'Analytics engineering',ids:['datamodel','forecast','requirements']}].map(group=><div key={group.name}><h3>{group.name}</h3><div>{content.skills.filter(skill=>group.ids.includes(skill.skill_id)).map(skill=><span key={skill.skill_id}>{skill.name}</span>)}</div></div>)}</div></section>
-        <section className="portfolio-preview__about" id="about"><p className="portfolio-preview__eyebrow">05 / ABOUT</p><h2>Curiosity, structure, and purposeful experimentation.</h2><p>{content.profile.headline}</p><a href={content.profile.linkedin_url} target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a></section>
+        <section className="portfolio-preview__about" id="about">
+          <p className="portfolio-preview__eyebrow">05 / ABOUT</p>
+          <h2>A little about me</h2>
+          <div className="portfolio-preview__about-copy">
+            <p>I'm Toni! I'm an analyst by profession, a problem-solver by nature, and someone who has a hard time leaving a good idea alone.</p>
+            <p>I love figuring out how things work, why they work the way they do, and whether there's a better way to do them. Sometimes that means digging into data to answer a question. Other times, it means realizing the question could be answered a whole lot easier if I just built something.</p>
+            <p>And honestly, that's my favorite part.</p>
+            <p>I love the process of taking an idea from <em>“I wonder if...”</em> to <em>“Wait, I think I can actually make this work.”</em> I'm constantly learning new tools, testing different approaches, and finding new things I want to try. The more I learn, the more possibilities I see.</p>
+            <p>What matters most to me isn't just building something clever. It's building something useful. Something that makes another person's day easier, helps them understand something they couldn't before, or gives them the confidence to do more themselves.</p>
+            <p>I'm still figuring out exactly where analytics ends and engineering begins for me. But I've realized I don't particularly want to choose between them. I like living somewhere in the middle.</p>
+          </div>
+          <a href={content.profile.linkedin_url} target="_blank" rel="noreferrer">Connect on LinkedIn ↗</a>
+        </section>
         <footer className="portfolio-preview__footer"><span>TONI / PORTFOLIO</span><span>Design preview · content subject to review</span></footer>
       </main>
     </>
